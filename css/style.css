@@ -27,6 +27,7 @@ main{
     --primary_color: #9792E4;
     --secondary_color: #0084FD;
     --secondary_light_color: #B5DDFF;
+    --white_color: white;
 }
 
 .container{
@@ -40,9 +41,10 @@ main{
     justify-content: space-between;
 } 
 
-.cards{
+#cards {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .card{
@@ -51,7 +53,7 @@ main{
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 
@@ -62,9 +64,12 @@ main .container{
 }
 
 
-.stategic_plan{
-    display: flex;
+#strategic_plan{
+    width: 100%;
     background-color: var(--primary_color);
+}
+#strategic_plan .container{
+    margin: auto;
 }
 
 .strat_plan {
@@ -77,9 +82,13 @@ main .container{
     display: block;
 }
 
+#testimonial .container{
+    margin: auto;
+}
 
 #testimonial{ 
     margin: 10px;
+    width: 100%;
 }
 
 #testimonial .testimonial_card{
@@ -95,6 +104,14 @@ main .container{
     align-items: center;
 }
 
+#benefits{
+    width: 100%;
+}
+
+#benefits .container{
+    margin: auto;
+}
+
 #benefits h2{
     text-align: center;
 }
@@ -103,6 +120,7 @@ main .container{
     padding: 20px;
     margin: 10px 0;
     width: 100%;
+    background-color: var(--white_color);
 }
 
 .benefit_card span {
@@ -114,8 +132,19 @@ main .container{
     flex-wrap: wrap;
 }
 
+#about_us span{
+    display: block;
+}
 
+#about_us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+footer span{
+    display: block;
+}
 
 
 
@@ -131,18 +160,23 @@ main .container{
     .head_container{
         max-width: 740px;
     }
-    main .cards{
+    
+    main #cards .container {
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+        display: flex;
     }
 
 
     main .card:first-child{
         width: calc((100% /3 *2) - 20px);
+        margin: 10px;
     }
 
     main .card{
         width: calc((100% /3) - 20px);
+        margin: 10px auto;
     }
 
     #testimonial .testimonial_card {
@@ -155,10 +189,32 @@ main .container{
         width: calc(100%/2 - 20px);
     }
 
+    #about_us{
+        flex-direction: row;
+    }
+
+    .about_us_left{
+        margin:  10px 10px;
+        width: calc(100%/3 *2 - 20px);
+    }
+
+    .about_us_right{
+        margin:  10px 10px;
+        width: calc(100%/3 - 20px);
+    }
+
+    #get_started {
+        text-align: center;
+        background-color: #9792E4;
+    }
+
 }
 
 @media screen and (min-width: 992px){
     
+    .head_container{
+        max-width: 960px;
+    }
     main .container{
         flex-direction: row;
         justify-content: center;
@@ -179,9 +235,7 @@ main .container{
 }
 
 @media screen and (min-width: 1200px){
-    .head_container{
-        width: 90%;
-    }
+    
 
 }
 
@@ -198,13 +252,7 @@ main .container{
     background-color: var(--primary_color);
 }
 
-.debug #testimonial{
-    background-color: aqua;
-}
 
-.debug .benefit_card{
-    background-color: royalblue;
-}
 
 .debug #benefits{
     background-color: #9792E4;
