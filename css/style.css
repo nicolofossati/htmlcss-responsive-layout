@@ -137,9 +137,14 @@ main .container{
 }
 
 #about_us {
+    width: 100%;
+}
+
+#about_us .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: auto;
 }
 
 footer span{
@@ -189,7 +194,7 @@ footer span{
         width: calc(100%/2 - 20px);
     }
 
-    #about_us{
+    #about_us .container{
         flex-direction: row;
     }
 
