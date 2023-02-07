@@ -208,6 +208,16 @@ main .container{
 
 .testimonial_card span{
     display: block;
+    color: var(--white_color);
+    text-align: center;
+}
+
+.testimonial_card span:first-child{
+    padding: 20px 0;
+}
+
+.testimonial_card span:last-child{
+    font-weight: bolder;
 }
 
 #testimonial .container{
@@ -224,6 +234,7 @@ main .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--primary_color);
 }
 
 .intro_testimonial {
