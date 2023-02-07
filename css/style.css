@@ -28,6 +28,7 @@ main{
     --secondary_color: #0084FD;
     --secondary_light_color: #B5DDFF;
     --white_color: white;
+    --dark_grey: #333333;
 }
 
 .container{
@@ -147,6 +148,27 @@ main .container{
     margin: auto;
 }
 
+#get_started {
+    width: 100%;
+    background-color: #9792E4;
+    text-align: center;
+}
+
+#get_started .container{
+    margin: auto;
+}
+
+
+footer{
+    width: 100%;
+    background-color: var(--dark_grey);
+}
+
+footer .container{
+    margin: auto;
+    text-align: center;
+}
+
 footer span{
     display: block;
 }
@@ -208,10 +230,7 @@ footer span{
         width: calc(100%/3 - 20px);
     }
 
-    #get_started {
-        text-align: center;
-        background-color: #9792E4;
-    }
+    
 
 }
 
