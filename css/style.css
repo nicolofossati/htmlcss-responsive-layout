@@ -95,6 +95,25 @@ main .container{
     align-items: center;
 }
 
+#benefits h2{
+    text-align: center;
+}
+
+.benefit_card{
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.benefit_card span {
+    display: block;
+}
+
+.benefits_card_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 
@@ -131,6 +150,11 @@ main .container{
         justify-content: center;
     }
 
+    .benefit_card{
+        margin:  10px 10px;
+        width: calc(100%/2 - 20px);
+    }
+
 }
 
 @media screen and (min-width: 992px){
@@ -147,6 +171,11 @@ main .container{
         flex-direction: column;
         background-color: aquamarine;
     }    
+
+    .benefit_card{
+        margin:  10px 10px;
+        width: calc(100%/3 - 20px);
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -171,4 +200,12 @@ main .container{
 
 .debug #testimonial{
     background-color: aqua;
+}
+
+.debug .benefit_card{
+    background-color: royalblue;
+}
+
+.debug #benefits{
+    background-color: #9792E4;
 }
