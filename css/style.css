@@ -33,6 +33,11 @@ main{
     --orange_color: #FDC15F;
     --black_color: black;
     --grey_azure: #63798C;
+    --grey: #737373;
+}
+
+.violet{
+    color: var(--primary_color);
 }
 
 .container{
@@ -212,6 +217,8 @@ main .container{
     text-align: center;
 }
 
+
+
 .testimonial_card span:first-child{
     padding: 20px 0;
 }
@@ -227,6 +234,7 @@ main .container{
 #testimonial{ 
     margin: 10px;
     width: 100%;
+    padding-bottom: 70px;
 }
 
 #testimonial .testimonial_card{
@@ -235,6 +243,8 @@ main .container{
     flex-direction: column;
     align-items: center;
     background-color: var(--primary_color);
+    border-radius: 20px;
+    padding: 20px 15px;
 }
 
 .intro_testimonial {
@@ -248,9 +258,6 @@ main .container{
     padding: 15px;
 }
 
-.intro_testimonial h2{
-    color: var(--primary_color);
-}
 
 .testimonial_img img{
     width: 200px;
@@ -270,17 +277,42 @@ main .container{
 
 #benefits h2{
     text-align: center;
+    color: var(--white_color);
+    padding: 90px 0;
+    font-size: 50px;
 }
 
 .benefit_card{
-    padding: 20px;
+    padding: 30px;
     margin: 10px 0;
     width: 100%;
     background-color: var(--white_color);
+    border-radius: 20px;
 }
 
 .benefit_card span {
     display: block;
+}
+
+.benefit_card span:first-child {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.benefit_card span:nth-child(2n) {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 30px 0;
+}
+
+.benefit_card span:nth-child(3n) {
+    color: var(--grey);
+    line-height: 2;
+    padding-bottom: 20px;
+}
+
+.benefit_card div {
+    font-weight: bolder;
 }
 
 .benefits_card_container{
@@ -347,6 +379,13 @@ footer span{
     display: inline-block;
 }
 
+#bttn_violet{
+    background-color: var(--primary_color);
+    color: var(--white_color);
+    padding: 5px 30px;
+    display: inline-block;
+}
+
 
 
 
@@ -400,6 +439,14 @@ footer span{
     #testimonial .testimonial_card {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .span_container{
+        padding-left: 20px;
+    }
+
+    .testimonial_card span{
+        text-align: unset;
     }
 
     .benefit_card{
@@ -471,6 +518,10 @@ footer span{
 
     .strat_plan h2 {
         font-size: 30px;
+    }
+
+    .span_container {
+        padding-left: 50px;
     }
 
     .testimonial_card {
