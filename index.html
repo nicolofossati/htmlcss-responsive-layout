@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- FONT AWESOME link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FONTS links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!-- CSS link -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,37 +22,69 @@
 <body class="debug">
     <header>
         <div class="head_container">
-            <div>LOGO</div>
-            <nav>NAV BAR</nav>
+            <img src="img/logo.png" alt="logo">
+            <i class="fa-solid fa-bars"></i>
+            <nav class="header_nav">
+                <ul>
+                    <li>
+                        <a href="#">Planning</a>
+                    </li>
+                    <li>
+                        <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#">features</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a class="bttn" id="bttn_white_black" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
         <section id="cards">
             <div class="container">
-                <div class="card">
-                    <div class="card_title">Title</div>  
-                    <div class="card_description">Description</div>
+                <div class=" card first_card">
+                    <div class="card_title">Get a demo application</div>  
+                    <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque suscipit nesciunt blanditiis eveniet doloremque asperiores, numquam debitis a ipsum?</div>
+                    <div class="bttn" id="bttn_blue"><i class="fa-brands fa-apple"></i>App Store</div>
                 </div>
     
                 <div class="card">
-                    <div class="card_title">Title</div>  
-                    <div class="card_description">Description</div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <div class="card_title">
+                        <span>Clean Code</span>
+                    </div>  
+                    <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque suscipit nesciunt blanditiis eveniet doloremque asperiores, numquam debitis a ipsum?</div>
                 </div>
     
                 <div class="card">
-                    <div class="card_title">Title</div>  
-                    <div class="card_description">Description</div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <div class="card_title">
+                        <span>Web Design</span>
+                    </div>  
+                    <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque suscipit nesciunt blanditiis eveniet doloremque asperiores, numquam debitis a ipsum?</div>
                 </div>
     
                 <div class="card">
-                    <div class="card_title">Title</div>  
-                    <div class="card_description">Description</div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div class="card_title">
+                        <span>Developement</span>
+                    </div>  
+                    <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque suscipit nesciunt blanditiis eveniet doloremque asperiores, numquam debitis a ipsum?</div>
                 </div>
     
                 <div class="card">
-                    <div class="card_title">Title</div>  
-                    <div class="card_description">Description</div>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div class="card_title">
+                        <span>Branding</span>
+                    </div>  
+                    <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis atque suscipit nesciunt blanditiis eveniet doloremque asperiores, numquam debitis a ipsum?</div>
                 </div>
             </div>
         </section>

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -29,6 +30,9 @@ main{
     --secondary_light_color: #B5DDFF;
     --white_color: white;
     --dark_grey: #333333;
+    --orange_color: #FDC15F;
+    --black_color: black;
+    --grey_azure: #63798C;
 }
 
 .container{
@@ -40,7 +44,31 @@ main{
     width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 } 
+
+.head_container i{
+    color: var(--white_color);
+    font-size: 20px;
+}
+
+.header_nav{
+    display: none;
+}
+
+.header_nav ul {
+    list-style-type: none;
+}
+
+.header_nav ul li{
+    display: inline-block;
+}
+
+.header_nav ul li a {
+    text-decoration: none;
+    color: var(--white_color);
+    margin-left: 20px;
+}
 
 #cards {
     display: flex;
@@ -55,8 +83,33 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
+    padding: 25px;
+    border-radius: 15px;
 }
 
+.card i {
+    font-size: 80px;
+    color: var(--secondary_color);
+}
+
+.card_title{
+    color: var(--secondary_color);
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 25px;
+}
+
+.card_description{
+    text-align: center;
+    color: var(--grey_azure);
+    font-weight: bolder;
+}
+
+.card i.fa-apple{
+    color: var(--white_color);
+    font-size: 20px;
+    padding-right: 10px;
+}
 
 main .container{
     flex-direction: column;
@@ -173,7 +226,23 @@ footer span{
     display: block;
 }
 
+.bttn{
+    padding: 5px 15px;
+    border-radius: 20px;
+}
 
+#bttn_white_black{
+    background-color: var(--white_color);
+    color: var(--black_color);
+
+}
+
+#bttn_blue{
+    background-color: var(--secondary_color);
+    color: var(--white_color);
+    padding: 5px 30px;
+    margin: 20px 0;
+}
 
 
 
@@ -239,6 +308,15 @@ footer span{
     .head_container{
         max-width: 960px;
     }
+
+    .header_nav{
+        display: block;
+    }
+
+    .head_container i{
+        display: none;
+    }
+
     main .container{
         flex-direction: row;
         justify-content: center;
@@ -261,23 +339,4 @@ footer span{
 @media screen and (min-width: 1200px){
     
 
-}
-
-
-
-
-/*DEBUG 768  992 */
-
-.debug .head_container div, .debug .head_container nav{
-    background-color: #9792E4;
-}
-
-.debug .testimonial_card{
-    background-color: var(--primary_color);
-}
-
-
-
-.debug #benefits{
-    background-color: #9792E4;
 }
