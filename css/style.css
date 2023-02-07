@@ -82,9 +82,18 @@ main{
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
+    margin-bottom: 30px;
     padding: 25px;
     border-radius: 15px;
+}
+
+#first_card{
+    padding-bottom: 0px;
+}
+
+#first_card img{
+    width: 60%;
+    margin: auto;
 }
 
 .card i {
@@ -109,6 +118,21 @@ main{
     color: var(--white_color);
     font-size: 20px;
     padding-right: 10px;
+}
+
+#first_card{
+    align-items: flex-start;
+}
+#first_card .card_title{
+    padding-left: 0;
+}
+
+#first_card .card_description{
+    text-align: unset;
+}
+
+.first_card_img_container{
+    text-align: center;
 }
 
 main .container{
@@ -242,6 +266,7 @@ footer span{
     color: var(--white_color);
     padding: 5px 30px;
     margin: 20px 0;
+    display: inline-block;
 }
 
 
@@ -262,6 +287,7 @@ footer span{
         flex-wrap: wrap;
         width: 100%;
         display: flex;
+        align-items: stretch;
     }
 
 
@@ -270,9 +296,23 @@ footer span{
         margin: 10px;
     }
 
+    #first_card img{
+        width: 40%;
+    }
+
+    
     main .card{
         width: calc((100% /3) - 20px);
         margin: 10px auto;
+    }
+
+    
+    #first_card img{
+        margin: 0;
+    }
+
+    .first_card_img_container{
+        text-align: unset;
     }
 
     #testimonial .testimonial_card {
@@ -324,11 +364,21 @@ footer span{
         max-width: 960px;
     }
 
+    
+    #first_card img{
+        align-self: flex-end;
+    }
+
+    main .card:first-child{
+        flex-direction: row;
+    }
+
     .testimonial_card {
         display: flex;
         flex-direction: column;
         background-color: aquamarine;
     }    
+
 
     .benefit_card{
         margin:  10px 10px;
