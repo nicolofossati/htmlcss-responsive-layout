@@ -428,9 +428,21 @@ footer .container{
     text-align: center;
 }
 
-footer span{
-    display: block;
+footer .container > span{
+    padding: 30px;
 }
+
+footer span{
+    display: inline-block;
+    color: var(--white_color);
+    font-size: 12px;
+}
+
+.violet_underline{
+    color: var(--primary_color);
+    text-decoration: underline;
+}
+
 
 .bttn{
     padding: 5px 15px;
@@ -564,7 +576,7 @@ footer span{
         font-size: 25px;
     }
 
-    #get_started .container span:nth-child(2n) {
+    #get_started .container span:nth-child(2n), footer .container > span {
         width: 60%;
         margin: auto;
     }
@@ -639,6 +651,11 @@ footer span{
     }
     #get_started .container span:nth-child(2n) {
         width: 40%;
+        margin: auto;
+    }
+
+    footer .container > span:first-child{
+        width: 50%;
         margin: auto;
     }
 }
