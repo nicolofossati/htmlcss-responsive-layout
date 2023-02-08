@@ -26,6 +26,7 @@ main{
 
 :root{
     --primary_color: #9792E4;
+    --primary_light_color:#D5D4F4;
     --secondary_color: #0084FD;
     --secondary_light_color: #B5DDFF;
     --white_color: white;
@@ -375,12 +376,47 @@ main .container{
     width: 100%;
     background-color: #9792E4;
     text-align: center;
+    padding: 40px 0;
 }
 
 #get_started .container{
     margin: auto;
+    padding-bottom: 0;
 }
 
+#get_started .container span:first-child{
+    color: var(--primary_light_color);
+}
+
+#get_started .container h2{
+    color: var(--white_color);
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+#get_started .container h1{
+    color: var(--orange_color);
+    font-size: 40px;
+}
+
+#get_started .container span:nth-child(2n){
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--white_color);
+    display: block;
+    padding: 20px 0;
+}
+
+.policy{
+    color: var(--white_color);
+    text-decoration: underline;
+}
+
+
+#get_started .container span:nth-child(3n){
+    font-size: 10px;
+    display: block;
+}
 
 footer{
     width: 100%;
@@ -424,6 +460,16 @@ footer span{
 
 .bttn_violet i{
     padding-right: 10px;
+}
+
+#bttn_white_violet{
+    background-color: var(--white_color);
+    color: var(--primary_color);
+    display: inline-block;
+    padding: 7px 30px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 20px;
 }
 
 
@@ -518,7 +564,10 @@ footer span{
         font-size: 25px;
     }
 
-    
+    #get_started .container span:nth-child(2n) {
+        width: 60%;
+        margin: auto;
+    }
 
 
     
@@ -587,6 +636,10 @@ footer span{
     .benefit_card{
         margin:  10px 10px;
         width: calc(100%/3 - 20px);
+    }
+    #get_started .container span:nth-child(2n) {
+        width: 40%;
+        margin: auto;
     }
 }
 
